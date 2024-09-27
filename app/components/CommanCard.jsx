@@ -2,7 +2,9 @@ import {
   BlockStack,
   Box,
   Card,
+  Grid,
   Icon,
+  InlineGrid,
   InlineStack,
   Text,
   Tooltip,
@@ -13,14 +15,14 @@ import { AlertCircleIcon, ArrowDiagonalIcon } from "@shopify/polaris-icons";
 export const CommanCard = ({ title, percentage, value, icon, tootltip }) => {
   return (
     <Box className="Sesstion_Wrap" >
-      <InlineStack >
+      <InlineStack wrap={false}>
         <Card>
           <BlockStack gap={500}>
             <Box className="Sesstion_Title_Wrap">
               <InlineStack align="space-between" blockAlign="center">
                 <Box className="Title_Wrap">
                   <InlineStack>
-                    <Text variant="bodyLg"> {title} </Text>
+                    <Text  variant="bodyLg"> {title} </Text>
                     <Box className="Sesstion_Tooltip_Wrap">
                       <Tooltip content={tootltip}>
                         <Icon source={AlertCircleIcon} tone="base" />
@@ -31,7 +33,7 @@ export const CommanCard = ({ title, percentage, value, icon, tootltip }) => {
                 <Box>
                   <InlineStack align="space-between">
                     <Icon source={ArrowDiagonalIcon} tone="success" />
-                    <Text> {percentage} </Text>
+                    <Text > {percentage} </Text>
                   </InlineStack>
                 </Box>
               </InlineStack>
@@ -39,7 +41,7 @@ export const CommanCard = ({ title, percentage, value, icon, tootltip }) => {
             <Box className="Sesstion_Title_Wrap">
               <InlineStack align="space-between">
                 <Box>
-                  <Text variant="headingXl">{value}</Text>
+                  <Text tone="subdued"  variant="headingXl">{value}</Text>
                 </Box>
                 <Box>
                   <Icon className="ValueIcon" source={icon} tone="base" />
