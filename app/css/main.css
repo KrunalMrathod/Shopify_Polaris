@@ -1,0 +1,391 @@
+.MainContainer {
+  border-radius: 8px;
+  background-color: #ffeeed;
+  border: 3px solid #ffb8b8;
+  padding: 20px;
+}
+
+.RightIcon {
+  fill: rgb(242, 81, 81);
+}
+
+.IconsBox {
+  width: 8%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(7px, 5px);
+}
+
+.TextBox {
+  width: 400px;
+  transform: translate(0px, 10px);
+}
+
+.TextBox .Polaris-Box {
+  margin-top: 10px;
+}
+
+.TextBox .Polaris-Box:nth-child(2) span {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.TextBox .Polaris-Box:first-of-type span {
+  font-weight: 600;
+  font-size: 17px;
+  color: black;
+  font-style: bold;
+}
+
+.TextBox .Polaris-Button {
+  background-color: green;
+  background-color: rgba(41, 132, 90, 1);
+  width: 30%;
+  padding: 14px 10px;
+  color: whitesmoke;
+  margin: 15px 0px;
+  box-shadow: none;
+}
+
+.RightBox {
+  transform: translateX(-40px);
+}
+
+.RightBox {
+  transform: translateX(-40px);
+}
+
+.secondBox {
+  margin-top: 50px;
+}
+
+.secondBox .Polaris-ShadowBevel .Polaris-Box:first-child {
+  padding-bottom: 0px !important;
+}
+
+.FistInner .Polaris-Button {
+  width: 5%;
+  height: 40px;
+  margin: auto 10px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  position: relative;
+}
+
+.FistInner .Polaris-Button svg {
+  width: 80%;
+  position: absolute;
+  left: 5px;
+  top: 0;
+  opacity: 0.8;
+}
+
+.FistInner .ProgessBox .Polaris-Button:last-child {
+  position: absolute;
+  left: 60%;
+  top: 17px;
+}
+
+.FistInner p {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.TextContainer {
+  text-align: start;
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+.TextContainer span {
+  opacity: 0.8;
+  font-size: 13px;
+}
+
+.ProgessBox {
+  margin: 20px 20px;
+  position: relative;
+}
+
+.ProgessBox .Polaris-ProgressBar {
+  width: 70%;
+}
+
+.Badge {
+  position: absolute;
+  top: 120px;
+  left: 60%;
+  width: 8%;
+}
+
+.Polaris-Box .Bedge .Polaris-Button {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.Polaris-Box .Bedge .Polaris-Button span {
+  color: black;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.Polaris-ProgressBar {
+  width: 80%;
+  margin-left: 30px;
+}
+
+.ProgessBox .Polaris-InlineStack p {
+  font-size: 13px;
+  opacity: 0.7;
+  font-weight: 700;
+}
+
+.ThirdBox {
+  margin-top: 20px;
+}
+
+.ThirdF .Polaris-InlineStack {
+  width: 100%;
+  display: flex;
+}
+
+.ThirdF .Polaris-InlineStack .Polaris-ShadowBevel {
+  width: 49%;
+  margin: auto;
+  height: 300px;
+}
+
+.ThirdF .Polaris-InlineStack .Polaris-ShadowBevel .Polaris-Box .Polaris-InlineGrid {
+  height: 200px;
+  display: flex;
+}
+
+.ThirdF .Polaris-InlineStack .Polaris-ShadowBevel .Polaris-Box .Polaris-InlineGrid img {
+  width: 100%;
+}
+
+.ThirdF .Polaris-InlineStack .Polaris-ShadowBevel .Polaris-Box img {
+  width: 100%;
+}
+
+.FourthBox {
+  display: flex;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.FourthBox .ImgBox {
+  width: 30%;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+}
+
+.FourthBox .Polaris-ShadowBevel .Polaris-InlineStack .Polaris-Box:nth-child(4) {
+  height: 50px;
+}
+
+.FourthBox .Polaris-ShadowBevel .Polaris-InlineStack .Polaris-Box:nth-child(4) .Polaris-Box {
+  height: 50px;
+}
+
+.FourthBox .ImgBox img {
+  width: 100%;
+  height: 100%;
+}
+
+.FourthBox .Polaris-ShadowBevel .Polaris-InlineStack .Polaris-Box:nth-child(2) {
+  width: 70%;
+}
+
+.FourthBox .Polaris-ShadowBevel {
+  width: 100%;
+}
+
+.fisrtTextBottm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.HideContent {
+  margin: auto;
+}
+
+.HideContent .Polaris-Icon {
+  margin: 0px 20px;
+  width: 50px;
+  height: 30px;
+}
+
+.HideContent .Polaris-InlineStack {
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.FourthBox .Polaris-ShadowBevel>.Polaris-Box {
+  padding: 0px 0px 0px 0px;
+}
+
+.FourthBox .Polaris-InlineGrid {
+  margin: 10px 30px;
+}
+
+.vr {
+  height: 4px;
+  background-color: green;
+  width: 28%;
+}
+
+/* Media */
+
+@media only screen and (max-width: 767px) {
+  .MainContainer {
+    width: 90%;
+    padding: 5px;
+    margin: auto;
+  }
+
+  .IconsBox {
+    border: 1px solid red;
+    width: 10%;
+    transform: unset;
+  }
+
+  .TextBox {
+    border: 1px solid red;
+    width: 90%;
+    transform: translateX(5px);
+  }
+
+  .TextBox .Polaris-Box {
+    margin-top: 5px;
+  }
+
+  .TextBox .Polaris-Box:first-of-type span {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .TextBox .Polaris-Box:nth-child(2) span {
+    font-size: 10px;
+  }
+
+  .TextBox .Polaris-Button {
+    width: 50%;
+    padding: 0px 0px;
+    color: whitesmoke;
+    margin: 15px 0px;
+    box-shadow: none;
+  }
+
+  .RightBox {
+    display: none;
+  }
+}
+
+
+/*  */
+
+
+
+
+
+
+.AnaliticsButton_Wrap .Polaris-Button:first-of-type {
+  background-color: var(--p-color-bg-fill-success);
+  box-shadow: none;
+}
+
+.AnaliticsButton_Wrap .Polaris-Button {
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.LastSyncWrap {
+  position: absolute;
+  top: 50px;
+}
+
+
+/*  Speed Store*/
+
+
+.Analytics_Main_Wrap {
+  padding: 10px;
+}
+
+.Analytics_Main_Wrap .Analytics_Charts_Wrap {
+  margin-top: 50px;
+}
+
+.Analytics_Charts_Wrap .StoreSpeed_Wrap .Polaris-ShadowBevel .Polaris-Box:first-of-type {
+  padding: 15px 15px;
+}
+
+.StoreSpeedScore_Wrap {
+  width: 40%;
+  margin: 10px 0px;
+}
+
+.StoreSpeedScore_Wrap .Polaris-Icon {
+  height: 25px;
+  width: 25px;
+}
+
+.StoreSpeedScore_Wrap.Polaris-Icon .Polaris-Icon__Svg {
+  width: 100%;
+  height: 100%;
+}
+
+.StoreSpeedScore_Wrap .Polaris-Icon--toneBase svg :nth-child(1) {
+  color: green;
+}
+
+.StoreSpeedScore_Wrap p {
+  color: green;
+}
+
+.StoreSpeed_Bars_Wrap {
+  margin: auto;
+}
+
+.StoreSpeedBars {
+  width: 20px;
+  margin: 0px 10px;
+  height: 100px;
+  position: relative;
+  background-color: #e6e6e6;
+}
+
+.Bars_First_Fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.Anallytics_Sesstion_Wrap {
+  margin-top: 50px;
+}
+
+.sesstion_Title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Sesstion_title_wrap{
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sesstion_value_wrap{
+  display: flex;
+  align-items: center;
+}
