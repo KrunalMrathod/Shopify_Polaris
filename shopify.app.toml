@@ -3,7 +3,7 @@
 client_id = "60a8b83317216d50984c94f2b22cbd85"
 name = "learning-polaris"
 handle = "learning-polaris-1"
-application_url = "https://infrastructure-douglas-detected-solaris.trycloudflare.com"
+application_url = "https://bk-capable-explicit-quotations.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://infrastructure-douglas-detected-solaris.trycloudflare.com/auth/callback",
-  "https://infrastructure-douglas-detected-solaris.trycloudflare.com/auth/shopify/callback",
-  "https://infrastructure-douglas-detected-solaris.trycloudflare.com/api/auth/callback"
+  "https://bk-capable-explicit-quotations.trycloudflare.com/auth/callback",
+  "https://bk-capable-explicit-quotations.trycloudflare.com/auth/shopify/callback",
+  "https://bk-capable-explicit-quotations.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

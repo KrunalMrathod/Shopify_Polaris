@@ -44,7 +44,7 @@ export const AnalyticsStoreSpeedTwo = () => {
               {
                 BarData.map((item) => {
                   return (
-                    <StoreSpeedBars color={item.backGroundColor} height={item.height} />
+                    <StoreSpeedBars key={item.height} color={item.backGroundColor} height={item.height} />
                   )
                 })
               }

@@ -1,35 +1,54 @@
-import { BlockStack, Box, Card, Icon, InlineStack, Text, Tooltip } from '@shopify/polaris'
-import React from 'react'
 import {
-    AlertCircleIcon, ArrowDiagonalIcon
-} from '@shopify/polaris-icons';
+  BlockStack,
+  Box,
+  Card,
+  Icon,
+  InlineStack,
+  Text,
+  Tooltip,
+} from "@shopify/polaris";
+import React from "react";
+import { AlertCircleIcon, ArrowDiagonalIcon } from "@shopify/polaris-icons";
 
-export const CommanCard = ({ title, value, tootltip, percentage }) => {
-    return (
-        <Box className="Sesstion_Wrap" >
-            <Card>
-                <Box className="Sesstion_title_wrap">
-                    <Box className="sesstion_Title">
-                        <Text>
-                            {title}
-                        </Text>
-                        <Box className="Sesstion_Tooltip_Wrap" >
-                            <Tooltip content={tootltip}>
-                                <Icon source={AlertCircleIcon} />
-                            </Tooltip>
-                        </Box>
+export const CommanCard = ({ title, percentage, value, icon, tootltip }) => {
+  return (
+    <Box className="Sesstion_Wrap" >
+      <InlineStack >
+        <Card>
+          <BlockStack gap={500}>
+            <Box className="Sesstion_Title_Wrap">
+              <InlineStack align="space-between" blockAlign="center">
+                <Box className="Title_Wrap">
+                  <InlineStack>
+                    <Text variant="bodyLg"> {title} </Text>
+                    <Box className="Sesstion_Tooltip_Wrap">
+                      <Tooltip content={tootltip}>
+                        <Icon source={AlertCircleIcon} tone="base" />
+                      </Tooltip>
                     </Box>
-                    <Box className="sesstion_value_wrap">
-                        <Icon
-                            source={ArrowDiagonalIcon}
-                            tone="base"
-                        />
-                        <Text>
-                            {percentage}
-                        </Text>
-                    </Box>
+                  </InlineStack>
                 </Box>
-            </Card>
-        </Box>
-    )
-}
+                <Box>
+                  <InlineStack align="space-between">
+                    <Icon source={ArrowDiagonalIcon} tone="success" />
+                    <Text> {percentage} </Text>
+                  </InlineStack>
+                </Box>
+              </InlineStack>
+            </Box>
+            <Box className="Sesstion_Title_Wrap">
+              <InlineStack align="space-between">
+                <Box>
+                  <Text variant="headingXl">{value}</Text>
+                </Box>
+                <Box>
+                  <Icon className="ValueIcon" source={icon} tone="base" />
+                </Box>
+              </InlineStack>
+            </Box>
+          </BlockStack>
+        </Card>
+      </InlineStack>
+    </Box>
+  );
+};

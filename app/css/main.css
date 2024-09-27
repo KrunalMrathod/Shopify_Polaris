@@ -374,18 +374,25 @@
   margin-top: 50px;
 }
 
-.sesstion_Title{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.Sesstion_Wrap{
+  /* height: 120px; */
 }
-.Sesstion_title_wrap{
-  border: 1px solid red;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.Sesstion_Wrap .Polaris-InlineStack  {
+  width: 100%;
+  height: 100%;
 }
-.sesstion_value_wrap{
-  display: flex;
-  align-items: center;
+.Sesstion_Wrap .Polaris-InlineStack .Polaris-ShadowBevel{
+  width: 100%;
+}
+.ValueIcon{
+  height: 80px;
+  width: 100px;
+}
+.Sesstion_Title_Wrap:nth-child(2) .Polaris-InlineStack .Polaris-Box .Polaris-Icon {
+  width: 30px;
+  height: 40px;
+}
+.Polaris-Icon--toneBase svg{
+  fill: rgb(9, 80, 9);
 }

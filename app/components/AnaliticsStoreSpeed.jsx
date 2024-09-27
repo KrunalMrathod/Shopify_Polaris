@@ -42,7 +42,7 @@ export const AnaliticsStoreSpeed = () => {
                             {
                                 BarData.map((item) => {
                                     return (
-                                        <StoreSppedBar color={item.backGroundColor} height={item.height} />
+                                        <StoreSppedBar key={item.height} color={item.backGroundColor} height={item.height} />
                                     )
                                 })
                             }
