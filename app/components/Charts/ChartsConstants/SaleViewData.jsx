@@ -22,7 +22,7 @@ export const SalesAndViewsdata = {
   datasets: [
     {
       label: "Sales",
-      data: [65, 59, 80, 81, 56, 55, 40, 50, 65, 75, 20, 46, 87, 15, 75],
+      data: [40, 30, 18, 55, 35, 77, 20, 85, 23, 90, 50, 83, 40, 80, 55],
       fill: false,
       tension: 0.4,
       borderColor: "#008060",
@@ -67,6 +67,7 @@ export const CommonSalesOptions = {
       position: "flase",
     },
   },
+  
 };
 
 export const SiteSpeedData = {

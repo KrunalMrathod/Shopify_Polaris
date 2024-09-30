@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-export default function StoreSpeedChart({value}) {
+export default function StoreSpeedChart({ value }) {
   const [chartLoaded, setChartLoaded] = useState(false);
   const [ReactApexChart, setReactApexChart] = useState(null);
 
@@ -14,8 +14,9 @@ export default function StoreSpeedChart({value}) {
     loadChart();
   }, []);
 
+
   const chartData = {
-    series: [value],
+    series: [value], 
     options: {
       chart: {
         type: "radialBar",
@@ -39,9 +40,7 @@ export default function StoreSpeedChart({value}) {
               fontWeight: "600",
               fontFamily: "SF-Pro-Display",
               color: "#007B5C",
-              formatter: function (val) {
-                return val;
-              },
+              formatter: (val) => `${val}%`, 
             },
           },
         },
@@ -51,37 +50,22 @@ export default function StoreSpeedChart({value}) {
         gradient: {
           shade: "light",
           shadeIntensity: 0.15,
-          inverseColors: true,
+          inverseColors: false,
           opacityFrom: 1,
           opacityTo: 1,
           stops: [0, 50, 65, 91],
           colorStops: [
-            {
-              offset: 0,
-              color: "#007B5C",
-              opacity: 1,
-            },
-            {
-              offset: 50,
-              color: "rgba(0, 123, 92, 0.6)",
-              opacity: 1,
-            },
-            {
-              offset: 100,
-              color: "rgba(0, 123, 92, 0.9)",
-              opacity: 1,
-            },
+            { offset: 0, color: "#007B5C", opacity: 1 },
+            { offset: 50, color: "rgba(0, 123, 92, 0.6)", opacity: 1 },
+            { offset: 100, color: "rgba(0, 123, 92, 0.9)", opacity: 1 },
           ],
         },
       },
       stroke: {
         dashArray: 0,
       },
-      labels: ["Over All"],
+      labels: ["Overall"],
     },
-  
-  
-
   };
 
   if (!chartLoaded || !ReactApexChart) return null;
@@ -97,5 +81,4 @@ export default function StoreSpeedChart({value}) {
       />
     </div>
   );
- 
 }

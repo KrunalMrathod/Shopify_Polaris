@@ -1,15 +1,12 @@
-import { Box, InlineGrid, InlineStack } from "@shopify/polaris";
+import { Box, InlineGrid } from "@shopify/polaris";
 import React, { useEffect, useState } from "react";
 import { AnalyticsTitle } from "./AnalyticsTitle";
 import { AnaliticsStoreSpeed } from "./AnaliticsStoreSpeed";
 import { AnalyticsSesstion } from "./AnalyticsSesstion";
 import { SalesAndViews } from "./SalesAndViews";
 import { BulletIcon, MinusIcon } from "@shopify/polaris-icons";
-import { CommonSalesOptions } from "./Charts/ChartsConstants/SaleViewData";
-import { SalesAndViewsdata } from "./Charts/ChartsConstants/SaleViewData";
-import { SiteSpeedData } from "./Charts/ChartsConstants/SaleViewData";
-import { Revenue } from "./Charts/ChartsConstants/SaleViewData";
-import { BarsData } from "./Charts/ChartsConstants/SaleViewData";
+import { CommonSalesOptions,SalesAndViewsdata,SiteSpeedData ,Revenue,BarsData} from "./Charts/ChartsConstants/SaleViewData";
+
 
 const AnalitiscDefault = () => {
   const [BarDataOne, setBarDataOne] = useState([]);
@@ -31,12 +28,12 @@ const AnalitiscDefault = () => {
         <InlineGrid columns={2} gap={500}>
           <AnaliticsStoreSpeed
             Title={"Store Speed Performance"}
-            Value={"50%"}
+            Value={50}
             BarData={BarDataOne}
           />
           <AnaliticsStoreSpeed
             Title={"Store Speed Performance"}
-            Value={"34%"}
+            Value={34}
             BarData={BarDataTwo}
           />
         </InlineGrid>
