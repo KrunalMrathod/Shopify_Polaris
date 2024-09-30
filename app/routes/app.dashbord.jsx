@@ -1,17 +1,16 @@
 import { Layout, Page } from "@shopify/polaris";
 import React from "react";
-import CardDefault from "../components/CardDefault";
-
-const dashBordPage = () => {
+import DashbordDefault from "../components/DashbordDefault"
+const DashBorad = () => {
   return (
     <Page>
       <Layout>
         <Layout.Section>
-          <CardDefault />
+          <DashbordDefault />
         </Layout.Section>
       </Layout>
     </Page>
   );
 };
 
-export default dashBordPage;
+export default DashBorad;

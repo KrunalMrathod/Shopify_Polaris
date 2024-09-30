@@ -374,21 +374,58 @@
   margin-top: 50px;
 }
 
-.Sesstion_Wrap .Polaris-InlineStack  {
+.Sesstion_Wrap .Polaris-InlineStack {
   width: 100%;
   height: 100%;
 }
-.Sesstion_Wrap .Polaris-InlineStack .Polaris-ShadowBevel{
+
+.Sesstion_Wrap .Polaris-InlineStack .Polaris-ShadowBevel {
   width: 100%;
 }
-.ValueIcon{
+
+.ValueIcon {
   height: 80px;
   width: 100px;
 }
+
 .Sesstion_Title_Wrap:nth-child(2) .Polaris-InlineStack .Polaris-Box .Polaris-Icon {
   width: 30px;
   height: 40px;
 }
-.Polaris-Icon--toneBase svg{
+
+.Polaris-Icon--toneBase svg {
   fill: rgb(9, 80, 9);
+}
+
+.Sales_View_Wrap {
+  margin-top: 50px;
+}
+
+.Sale_Count_Wrap {
+  margin: 15px 0px;
+  width: 50%;
+}
+
+.Sale_Count_Wrap .Polaris-InlineStack .Polaris-Box .Polaris-Icon {
+  color: green;
+  width: 25px;
+  height: 25px;
+}
+
+.Sale_Count_Wrap .Polaris-InlineStack .Polaris-Box .Polaris-Icon:first-of-type {
+  height: 30px;
+  width: 30px;
+}
+
+.Sale_Count_Wrap .Polaris-InlineStack .Polaris-Box:nth-child(2) .Polaris-Icon:first-of-type {
+  color: #e1b878;
+}
+.SiteSpeed_Wrap{
+  display: flex;
+  margin-top: 50px;
+}
+
+.SiteSpeed_Wrap .Sales_View_Wrap:first-of-type { 
+  width: 70%;
+  margin: auto 30px;
 }

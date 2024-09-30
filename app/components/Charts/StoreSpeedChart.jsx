@@ -1,4 +1,3 @@
-import { Box, Text } from "@shopify/polaris";
 import React, { useEffect, useState } from "react";
 
 export default function StoreSpeedChart({value}) {

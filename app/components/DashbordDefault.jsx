@@ -6,23 +6,21 @@ import StoreSpeed from "./StoreSpeed";
 import Slider from "./Slider";
 import InitialApp from "./InitialApp";
 
-function CardDefault() {
+function DashbordDefault() {
   return (
     <Box shadow="800">
-
       {/* Initial App Activation */}
       <InitialApp />
 
       {/* Accordian */}
       <Accordian />
 
-      {/* StoreSpeed */}
+      {/* Store Speed Performance */}
       <StoreSpeed />
 
       {/* Slider */}
       <Slider />
-      
     </Box>
   );
 }
-export default CardDefault;
+export default DashbordDefault;

@@ -1,7 +1,7 @@
 import { Layout, Page } from "@shopify/polaris";
 import React from "react";
 import AnalitiscDefault from "../components/AnalyticsDefault";
-const dashBordPage = () => {
+const Analytics = () => {
   return (
     <Page>
       <Layout>
@@ -13,4 +13,4 @@ const dashBordPage = () => {
   );
 };
 
-export default dashBordPage;
+export default Analytics;
