@@ -420,12 +420,51 @@
 .Sale_Count_Wrap .Polaris-InlineStack .Polaris-Box:nth-child(2) .Polaris-Icon:first-of-type {
   color: #e1b878;
 }
-.SiteSpeed_Wrap{
+
+.SiteSpeed_Wrap {
   display: flex;
   margin-top: 50px;
 }
 
-.SiteSpeed_Wrap .Sales_View_Wrap:first-of-type { 
+.SiteSpeed_Wrap .Sales_View_Wrap:first-of-type {
   width: 70%;
   margin: auto 30px;
+}
+
+.Sales_Wrape {
+  margin-top: 50px;
+}
+.SalesGrowthCards_Wrap {
+  width: 20%;
+}
+
+.TopOrders_Wrap {
+  width: 70%;
+}
+.SalesGrid_Wrap {
+  width: 45%;
+  margin: auto 12px;
+}
+.Products_Wrap {
+  height: 70px;
+  margin: 10px auto;
+}
+.UnitSold_Wrap {
+  width: 24%;
+  
+}
+.unitImg_Wrap {
+  width: 25%;
+  height: 40px;
+  object-fit: cover;
+}
+.unitImg_Wrap img {
+  width: 100%;
+  height: 100%;
+}
+.unitDescription_Wrap {
+  width: 40%;
+}
+.Products_Wrap .Polaris-InlineStack {
+  height: 100%;
 }

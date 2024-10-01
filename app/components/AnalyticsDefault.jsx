@@ -6,6 +6,7 @@ import { AnalyticsSesstion } from "./AnalyticsSesstion";
 import { SalesAndViews } from "./SalesAndViews";
 import { BulletIcon, MinusIcon } from "@shopify/polaris-icons";
 import { CommonSalesOptions,SalesAndViewsdata,SiteSpeedData ,Revenue,BarsData} from "./Charts/ChartsConstants/SaleViewData";
+import { Sales } from "./Sales";
 
 
 const AnalitiscDefault = () => {
@@ -71,6 +72,9 @@ const AnalitiscDefault = () => {
           numbers={"$999"}
         />
       </Box>
+
+      {/* Sales */}
+      <Sales/>
     </Box>
   );
 };
