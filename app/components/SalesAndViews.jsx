@@ -54,6 +54,7 @@ export const SalesAndViews = ({
                   </InlineStack>
                 </Box>
               )}
+              
             </InlineStack>
           </Box>
           <Box className="Sale_Chrat_Wrap">

@@ -3,7 +3,7 @@
 client_id = "60a8b83317216d50984c94f2b22cbd85"
 name = "learning-polaris"
 handle = "learning-polaris-1"
-application_url = "https://confidential-groundwater-respondent-join.trycloudflare.com"
+application_url = "https://shirts-pcs-those-classified.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://confidential-groundwater-respondent-join.trycloudflare.com/auth/callback",
-  "https://confidential-groundwater-respondent-join.trycloudflare.com/auth/shopify/callback",
-  "https://confidential-groundwater-respondent-join.trycloudflare.com/api/auth/callback"
+  "https://shirts-pcs-those-classified.trycloudflare.com/auth/callback",
+  "https://shirts-pcs-those-classified.trycloudflare.com/auth/shopify/callback",
+  "https://shirts-pcs-those-classified.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

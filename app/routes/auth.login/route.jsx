@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { json } from "@remix-run/node";
 import { Form, useActionData, useLoaderData } from "@remix-run/react";
 import {
@@ -14,6 +14,7 @@ import polarisTranslations from "@shopify/polaris/locales/en.json";
 import polarisStyles from "@shopify/polaris/build/esm/styles.css?url";
 import { login } from "../../shopify.server";
 import { loginErrorMessage } from "./error.server";
+
 
 export const links = () => [{ rel: "stylesheet", href: polarisStyles }];
 

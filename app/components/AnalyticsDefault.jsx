@@ -5,9 +5,14 @@ import { AnaliticsStoreSpeed } from "./AnaliticsStoreSpeed";
 import { AnalyticsSesstion } from "./AnalyticsSesstion";
 import { SalesAndViews } from "./SalesAndViews";
 import { BulletIcon, MinusIcon } from "@shopify/polaris-icons";
-import { CommonSalesOptions,SalesAndViewsdata,SiteSpeedData ,Revenue,BarsData} from "./Charts/ChartsConstants/SaleViewData";
+import {
+  CommonSalesOptions,
+  SalesAndViewsdata,
+  SiteSpeedData,
+  Revenue,
+  BarsData,
+} from "./Charts/ChartsConstants/SaleViewData";
 import { Sales } from "./Sales";
-
 
 const AnalitiscDefault = () => {
   const [BarDataOne, setBarDataOne] = useState([]);
@@ -44,14 +49,16 @@ const AnalitiscDefault = () => {
       <AnalyticsSesstion />
 
       {/* Sales And View Chart */}
-      <SalesAndViews
-        Title={"Sales & Views"}
-        Iconsrc={BulletIcon}
-        CharData={SalesAndViewsdata}
-        ChartOptions={CommonSalesOptions}
-        numbers={300}
-        Mobile={130}
-      />
+      <Box className="SalesView_Wrap">
+        <SalesAndViews
+          Title={"Sales & Views"}
+          Iconsrc={BulletIcon}
+          CharData={SalesAndViewsdata}
+          ChartOptions={CommonSalesOptions}
+          numbers={300}
+          Mobile={130}
+        />
+      </Box>
       {/* Site Speed Score */}
       <Box className="SiteSpeed_Wrap">
         <SalesAndViews
@@ -74,7 +81,7 @@ const AnalitiscDefault = () => {
       </Box>
 
       {/* Sales */}
-      <Sales/>
+      <Sales />
     </Box>
   );
 };

@@ -401,10 +401,12 @@
   margin-top: 50px;
 }
 
-.Sale_Count_Wrap {
+
+.SalesView_Wrap .Sale_Count_Wrap {
   margin: 15px 0px;
-  width: 50%;
+  width: 45%;
 }
+
 
 .Sale_Count_Wrap .Polaris-InlineStack .Polaris-Box .Polaris-Icon {
   color: green;
@@ -425,15 +427,31 @@
   display: flex;
   margin-top: 50px;
 }
+.SiteSpeed_Wrap .Sales_View_Wrap:first-of-type .Sale_Count_Wrap {
+  width: 90%;
+  margin: 15px 0px;
+}
+.SiteSpeed_Wrap .Sales_View_Wrap:last-of-type .Sale_Count_Wrap{
+  width: 90%;
+  margin: 15px 0px;
+}
 
 .SiteSpeed_Wrap .Sales_View_Wrap:first-of-type {
-  width: 70%;
+  width: 55%;
   margin: auto 30px;
+}
+
+.SiteSpeed_Wrap .Sales_View_Wrap:last-of-type {
+  margin: 0px !important  ;
+}
+.SiteSpeed_Wrap .Sales_View_Wrap:last-of-type .Polaris-ShadowBevel{
+ height: 100%;
 }
 
 .Sales_Wrape {
   margin-top: 50px;
 }
+
 .SalesGrowthCards_Wrap {
   width: 20%;
 }
@@ -441,30 +459,91 @@
 .TopOrders_Wrap {
   width: 70%;
 }
+
 .SalesGrid_Wrap {
   width: 45%;
   margin: auto 12px;
 }
+
 .Products_Wrap {
   height: 70px;
   margin: 10px auto;
 }
+
 .UnitSold_Wrap {
   width: 24%;
-  
+
 }
+
 .unitImg_Wrap {
   width: 25%;
   height: 40px;
   object-fit: cover;
 }
+
 .unitImg_Wrap img {
   width: 100%;
   height: 100%;
 }
+
 .unitDescription_Wrap {
   width: 40%;
 }
+
 .Products_Wrap .Polaris-InlineStack {
   height: 100%;
+}
+
+
+.app_analysis_wrap .cardicons_wrap {
+  height: 53px;
+}
+.app_analysis_wrap .cardicons_wrap h3 {
+  color: var(--p-color-bg-fill-success);
+}
+.app_analysis_wrap .cardicons_wrap .polaris-Icon {
+  color: var(--p-color-bg-fill-success);
+  width: 20%;
+  height: auto;
+}
+.app_analysis_wrap .table_wrapper {
+  margin-top: 50px;
+}
+
+.app_analysis_wrap .ToggleWrap {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.app_analysis_wrap label {
+  width: 40px;
+  height: 20px;
+  background: var(--p-color-bg-fill-success);
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 1000px;
+  display: block;
+}
+
+.app_analysis_wrap sup {
+  font-size: 16px;
+}
+
+.app_analysis_wrap #toggle {
+  display: none;
+}
+
+.app_analysis_wrap .toggle-switch {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transition: all 0.5s;
+  background: var(--p-color-bg-surface);
+}
+
+.app_analysis_wrap input:checked ~ .toggle-switch {
+  transform: translateX(calc(34px - 14px));
+}
+.app_analysis_wrap .filter_wrap{
+  margin-top: 20px;
 }
