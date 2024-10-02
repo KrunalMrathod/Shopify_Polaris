@@ -547,3 +547,7 @@
 .app_analysis_wrap .filter_wrap{
   margin-top: 20px;
 }
+.app_analysis_wrap .rotate{
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
+}

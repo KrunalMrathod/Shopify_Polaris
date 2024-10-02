@@ -9,39 +9,39 @@ import {
   Text,
   TextField,
 } from "@shopify/polaris";
-import React, { useEffect, useState } from "react";
-import { SearchIcon, CaretDownIcon } from "@shopify/polaris-icons";
+import React, { useState } from "react";
+import { SearchIcon, CaretDownIcon, ChevronDownIcon } from "@shopify/polaris-icons";
 import { TableData } from "../components/Charts/ChartsConstants/AppAnalysisConstants";
 
 const Table = () => {
-  const [rows, setRow] = useState([]);
+  const [rows, setRow] = useState(TableData);
+  const [expandedRowIndex, setExpandedRowIndex] = useState(null);
 
-  useEffect(() => {
-    setRow(TableData);
-  });
+  const handleRowClick = (index) => {
+    setExpandedRowIndex(expandedRowIndex === index ? null : index);
+  };
+
   const tableRows = rows.flatMap((row, index) => [
     [
       <div
         style={{ display: "flex", alignItems: "center", gap: "8px" }}
-        key={index}
+        key={`row-${index}`}
       >
         <img src={row?.image} alt="Logo" style={{ width: 30, height: 30 }} />
         {row.name}
       </div>,
-      row.size + " KIB",
-      row.lastUsage + "h ago",
-      row.avgLoadTime + "ms",
-      row.icon,
+      `${row.size} KIB`,
+      `${row.lastUsage}h ago`,
+      `${row.avgLoadTime}ms`,
       <div
         onClick={() => handleRowClick(index)}
-        key={index}
+        key={`icon-${index}`}
         className={expandedRowIndex === index ? "rotate" : ""}
-        style={{
-          cursor: "pointer",
-        }}
+        style={{ cursor: "pointer" }}
       >
         <Icon source={ChevronDownIcon} tone="base" />
       </div>,
+      
     ],
     ...(expandedRowIndex === index
       ? [
@@ -58,7 +58,6 @@ const Table = () => {
       : []),
   ]);
 
-
   return (
     <Box className="table_wrapper">
       <Card>
@@ -72,12 +71,13 @@ const Table = () => {
                   type="checkbox"
                   id="toggle"
                   className="toggle-input"
-                ></input>
+                />
                 <Box className="toggle-switch"></Box>
               </label>
               <Text variant="bodyMd">Mobile</Text>
             </InlineStack>
           </Box>
+
           {/* Filter */}
           <Box className="filter_wrap">
             <InlineStack align="space-between">
@@ -113,8 +113,7 @@ const Table = () => {
 
           {/* Table */}
           <Box>
-            {tableRows && tableRows && tableRows.length > 0 && (
-              
+            {tableRows && tableRows.length > 0 && (
               <DataTable
                 columnContentTypes={[
                   "text",
@@ -140,7 +139,7 @@ const Table = () => {
                   label: "8 / 24",
                 }}
               />
-            ) }
+            )}
           </Box>
         </BlockStack>
       </Card>
@@ -149,12 +148,3 @@ const Table = () => {
 };
 
 export default Table;
-
-
-
-
-
-
-
-
-

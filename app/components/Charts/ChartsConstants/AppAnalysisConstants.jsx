@@ -2,8 +2,10 @@ import {
   DragHandleIcon,
   DnsSettingsIcon,
   ClockIcon,
+  AlertDiamondIcon,
+  AlertTriangleIcon
 } from "@shopify/polaris-icons";
-
+import TableImg  from "../../../assests/TableImg.jpg"
 export const cardEntries = [
   {
     title: "Installed Apps",
@@ -31,10 +33,6 @@ export const cardEntries = [
   },
 ];
 
-import {
-  AlertDiamondIcon,
-  AlertTriangleIcon,  
-} from '@shopify/polaris-icons';
 
 
 export const TableData = [
@@ -44,7 +42,7 @@ export const TableData = [
     lastUsage: 14,
     avgLoadTime: 1,
     icon: <AlertDiamondIcon />,
-    image: AlertDiamondIcon,
+    image: TableImg,
     details: [
       [
         "http://www.faxquote.com//Stamped.io",
@@ -86,7 +84,7 @@ export const TableData = [
     lastUsage: 11,
     avgLoadTime: 1,
     icon: <  AlertTriangleIcon />,
-    image:   AlertTriangleIcon,
+    image:   TableImg,
     details: [
       [
         "http://www.faxquote.com//PolyfillService",
@@ -128,7 +126,7 @@ export const TableData = [
     lastUsage: 8,
     avgLoadTime: 1,
     icon: <  AlertTriangleIcon />,
-    image:   AlertTriangleIcon,
+    image:   TableImg,
     details: [
       [
         "http://www.faxquote.com//GoogleFonts",
@@ -154,7 +152,7 @@ export const TableData = [
     lastUsage: 1,
     avgLoadTime: 1,
     icon: "",
-    image:   AlertTriangleIcon,
+    image:   TableImg,
     details: [
       [
         "http://www.faxquote.com//GoogleCDN",
@@ -180,7 +178,7 @@ export const TableData = [
     lastUsage: 2,
     avgLoadTime: 1,
     icon: "",
-    image:   AlertTriangleIcon,
+    image:   TableImg,
     details: [
       [
         "http://www.faxquote.com//GoogleShoppingFeed",
@@ -206,7 +204,7 @@ export const TableData = [
     lastUsage: 5,
     avgLoadTime: 1.2,
     icon: "",
-    image:   AlertTriangleIcon,
+    image:   TableImg,
     details: [
       [
         "http://www.faxquote.com//AliReviews",
@@ -232,7 +230,7 @@ export const TableData = [
     lastUsage: 11,
     avgLoadTime: 2,
     icon: "",
-    image:   AlertTriangleIcon,
+    image:   TableImg,
     details: [
       [
         "http://www.faxquote.com//Pinterest",
@@ -258,7 +256,7 @@ export const TableData = [
     lastUsage: 6,
     avgLoadTime: 2,
     icon: "",
-    image:   AlertTriangleIcon,
+    image:   TableImg,
     details: [
       [
         "http://www.faxquote.com//FacebookChannel",
@@ -284,7 +282,7 @@ export const TableData = [
     lastUsage: 8,
     avgLoadTime: 1.3,
     icon: "",
-    image:   AlertTriangleIcon,
+    image:   TableImg,
     details: [
       [
         "http://www.faxquote.com//ThirdPartyScripts",
