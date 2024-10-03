@@ -3,7 +3,7 @@
 client_id = "60a8b83317216d50984c94f2b22cbd85"
 name = "learning-polaris"
 handle = "learning-polaris-1"
-application_url = "https://ocean-islands-jewellery-gate.trycloudflare.com"
+application_url = "https://transit-rain-electron-association.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://ocean-islands-jewellery-gate.trycloudflare.com/auth/callback",
-  "https://ocean-islands-jewellery-gate.trycloudflare.com/auth/shopify/callback",
-  "https://ocean-islands-jewellery-gate.trycloudflare.com/api/auth/callback"
+  "https://transit-rain-electron-association.trycloudflare.com/auth/callback",
+  "https://transit-rain-electron-association.trycloudflare.com/auth/shopify/callback",
+  "https://transit-rain-electron-association.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

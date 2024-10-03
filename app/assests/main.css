@@ -495,16 +495,17 @@
 }
 
 
-.app_analysis_wrap .cardicons_wrap {
+.app_analysis_wrap .card_wrap {
   height: 53px;
 }
-.app_analysis_wrap .cardicons_wrap h3 {
+.app_analysis_wrap .card_wrap h3 {
   color: var(--p-color-bg-fill-success);
 }
-.app_analysis_wrap .cardicons_wrap .polaris-Icon {
+.app_analysis_wrap .card_wrap .Polaris-Icon{
   color: var(--p-color-bg-fill-success);
-  width: 20%;
+  width: 15%;
   height: auto;
+  margin: 0px !important;
 }
 .app_analysis_wrap .table_wrapper {
   margin-top: 50px;
@@ -550,4 +551,22 @@
 .app_analysis_wrap .rotate{
   transition: transform 0.3s ease;
   transform: rotate(180deg);
+}
+.app_analysis_wrap .show{
+  filter: blur(8px);
+ 
+}
+.app_analysis_wrap .LoaderText{
+  position: absolute;
+  opacity: 0.9;
+  text-align: center;
+  left: 16%;
+  top: 30%;
+}
+.app_analysis_wrap .table_wrapper .LoaderText{
+  left: 40%;
+  top: 40%;
+}
+.app_analysis_wrap .Loader_wrap{
+  animation: rotet 2s infinite linear;
 }
