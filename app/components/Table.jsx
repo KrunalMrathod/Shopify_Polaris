@@ -168,6 +168,12 @@ const Table = ({ loading }) => {
             <Text variant="headingMd"> Aggregating Analytics </Text>
           </Box>
         )}
+
+        {rows && rows.length <= 0 && (
+          <Card>
+            <Text> No Data </Text>
+          </Card>
+        )}
       </Card>
     </Box>
   );
