@@ -40,7 +40,9 @@ const Cards = ({ data, loading }) => {
             </Box>
             {!loading && (
               <Box className="LoaderText">
-                <Loader />
+                <Box className="Loader_wrap">
+                  <Loader />
+                </Box>
                 <Text variant="headingMd"> Aggregating Analytics </Text>
               </Box>
             )}
@@ -52,6 +54,3 @@ const Cards = ({ data, loading }) => {
 };
 
 export default Cards;
-
-// absolute
-// text center

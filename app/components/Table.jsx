@@ -9,7 +9,7 @@ import {
   Text,
   TextField,
 } from "@shopify/polaris";
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import {
   SearchIcon,
   CaretDownIcon,
@@ -22,6 +22,7 @@ const Table = ({ loading }) => {
   const [rows, setRow] = useState(TableData);
   const [expandedRowIndex, setExpandedRowIndex] = useState(null);
   const [textFieldValue, setTextFieldValue] = useState("");
+  const [sort,setSort] = useState(false)
 
   const tableRows = rows.flatMap((row, index) => [
     [
@@ -75,7 +76,20 @@ const Table = ({ loading }) => {
     setRow(FilteredData);
   }, []);
 
-  console.log(textFieldValue, "textField");
+  
+  
+  const handleSorting = () => {
+    setSort(!sort)
+   if(sort) {
+    const sortedData = rows.sort((a, b) => a.size - b.size);
+    setRow(sortedData);
+   }
+   else {
+    const sortedData = rows.sort((a, b) => b.size - a.size);
+    setRow(sortedData);
+   }
+  };
+
   return (
     <Box className="table_wrapper">
       <Card>
@@ -117,9 +131,12 @@ const Table = ({ loading }) => {
                         />
                       }
                     />
-                    <Button size="medium">
+                    <Button size="medium" onClick={handleSorting}>
                       <InlineStack>
-                        <Text>Size Ascending</Text>
+
+                        {
+                          sort ? (<Text>Size Descending</Text> ) : ( <Text>Size Ascending</Text> )
+                        }
                         <Icon source={CaretDownIcon} />
                       </InlineStack>
                     </Button>
@@ -170,9 +187,11 @@ const Table = ({ loading }) => {
         )}
 
         {rows && rows.length <= 0 && (
-          <Card>
-            <Text> No Data </Text>
-          </Card>
+          <Box paddingBlock={500}>
+            <Text variant="headingLg" alignment="center">
+              No Data Found
+            </Text>
+          </Box>
         )}
       </Card>
     </Box>

@@ -427,11 +427,13 @@
   display: flex;
   margin-top: 50px;
 }
+
 .SiteSpeed_Wrap .Sales_View_Wrap:first-of-type .Sale_Count_Wrap {
   width: 90%;
   margin: 15px 0px;
 }
-.SiteSpeed_Wrap .Sales_View_Wrap:last-of-type .Sale_Count_Wrap{
+
+.SiteSpeed_Wrap .Sales_View_Wrap:last-of-type .Sale_Count_Wrap {
   width: 90%;
   margin: 15px 0px;
 }
@@ -442,10 +444,11 @@
 }
 
 .SiteSpeed_Wrap .Sales_View_Wrap:last-of-type {
-  margin: 0px !important  ;
+  margin: 0px !important;
 }
-.SiteSpeed_Wrap .Sales_View_Wrap:last-of-type .Polaris-ShadowBevel{
- height: 100%;
+
+.SiteSpeed_Wrap .Sales_View_Wrap:last-of-type .Polaris-ShadowBevel {
+  height: 100%;
 }
 
 .Sales_Wrape {
@@ -498,15 +501,18 @@
 .app_analysis_wrap .card_wrap {
   height: 53px;
 }
+
 .app_analysis_wrap .card_wrap h3 {
   color: var(--p-color-bg-fill-success);
 }
-.app_analysis_wrap .card_wrap .Polaris-Icon{
+
+.app_analysis_wrap .card_wrap .Polaris-Icon {
   color: var(--p-color-bg-fill-success);
   width: 15%;
   height: auto;
   margin: 0px !important;
 }
+
 .app_analysis_wrap .table_wrapper {
   margin-top: 50px;
 }
@@ -516,6 +522,7 @@
   align-items: center;
   justify-content: end;
 }
+
 .app_analysis_wrap label {
   width: 40px;
   height: 20px;
@@ -542,31 +549,48 @@
   background: var(--p-color-bg-surface);
 }
 
-.app_analysis_wrap input:checked ~ .toggle-switch {
+.app_analysis_wrap input:checked~.toggle-switch {
   transform: translateX(calc(34px - 14px));
 }
-.app_analysis_wrap .filter_wrap{
+
+.app_analysis_wrap .filter_wrap {
   margin-top: 20px;
 }
-.app_analysis_wrap .rotate{
+
+.app_analysis_wrap .rotate {
   transition: transform 0.3s ease;
   transform: rotate(180deg);
 }
-.app_analysis_wrap .show{
+
+.app_analysis_wrap .show {
   filter: blur(8px);
- 
+
 }
-.app_analysis_wrap .LoaderText{
+
+.app_analysis_wrap .LoaderText {
   position: absolute;
   opacity: 0.9;
   text-align: center;
   left: 16%;
   top: 30%;
 }
-.app_analysis_wrap .table_wrapper .LoaderText{
+
+.app_analysis_wrap .table_wrapper .LoaderText {
   left: 40%;
   top: 40%;
 }
-.app_analysis_wrap .Loader_wrap{
-  animation: rotet 2s infinite linear;
+
+
+.app_analysis_wrap .Loader_wrap svg {
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
